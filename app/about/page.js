@@ -2,13 +2,13 @@ export default function About() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-light-green via-cream to-sand py-16 md:py-24 lg:py-32">
+      <section className="bg-gradient-to-br from-light-green via-cream to-sand py-16 md:py-24 lg:py-32 animate-fade-in">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-green-dark mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-green-dark mb-6 animate-fade-in-up">
               About MEUKART
             </h1>
-            <div className="mb-6">
+            <div className="mb-6 animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               <p className="text-base sm:text-lg font-semibold text-secondary-green mb-2">
                 Digital Market Intelligence & Trade Facilitation Platform
               </p>
@@ -16,7 +16,7 @@ export default function About() {
                 for Medicinal Plants
               </p>
             </div>
-            <p className="text-lg sm:text-xl text-dark-gray leading-relaxed">
+            <p className="text-lg sm:text-xl text-dark-gray leading-relaxed animate-fade-in-up" style={{animationDelay: '0.4s'}}>
               Empowering Medicinal Plant Farmers Through Market Transparency
             </p>
           </div>
@@ -24,12 +24,12 @@ export default function About() {
       </section>
 
       {/* Government Partnership Section */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-white animate-fade-in">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12 md:mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-primary-green-dark mb-6">Government-Backed Initiative</h2>
-              <p className="text-base sm:text-lg text-dark-gray leading-relaxed">
+              <h2 className="text-3xl sm:text-4xl font-bold text-primary-green-dark mb-6 animate-fade-in-up">Government-Backed Initiative</h2>
+              <p className="text-base sm:text-lg text-dark-gray leading-relaxed animate-fade-in-up" style={{animationDelay: '0.2s'}}>
                 MEUKART is a pilot project supported by the National Medicinal Plants Board (NMPB), 
                 Ministry of AYUSH, Government of India, and implemented through the State Medicinal 
                 Plant Board, Uttarakhand.
@@ -37,7 +37,7 @@ export default function About() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
-              <div className="bg-cream rounded-2xl p-6 md:p-8 text-center">
+              <div className="bg-cream rounded-2xl p-6 md:p-8 text-center animate-scale-in" style={{animationDelay: '0.4s'}}>
                 <div className="w-14 h-14 md:w-16 md:h-16 bg-primary-green rounded-xl flex items-center justify-center mb-4 mx-auto">
                   <svg className="w-7 h-7 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
@@ -47,7 +47,7 @@ export default function About() {
                 <p className="text-gray text-sm md:text-base">National Medicinal Plants Board, Ministry of AYUSH</p>
               </div>
 
-              <div className="bg-cream rounded-2xl p-6 md:p-8 text-center">
+              <div className="bg-cream rounded-2xl p-6 md:p-8 text-center animate-scale-in" style={{animationDelay: '0.6s'}}>
                 <div className="w-14 h-14 md:w-16 md:h-16 bg-primary-green rounded-xl flex items-center justify-center mb-4 mx-auto">
                   <svg className="w-7 h-7 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
@@ -57,7 +57,7 @@ export default function About() {
                 <p className="text-gray text-sm md:text-base">State Medicinal Plant Board, Uttarakhand</p>
               </div>
 
-              <div className="bg-cream rounded-2xl p-6 md:p-8 text-center">
+              <div className="bg-cream rounded-2xl p-6 md:p-8 text-center animate-scale-in" style={{animationDelay: '0.8s'}}>
                 <div className="w-14 h-14 md:w-16 md:h-16 bg-primary-green rounded-xl flex items-center justify-center mb-4 mx-auto">
                   <svg className="w-7 h-7 md:w-8 md:h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
@@ -72,12 +72,12 @@ export default function About() {
       </section>
 
       {/* Mission Section - Updated */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-light-green/30 to-cream">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-light-green/30 to-cream animate-fade-in">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12 md:mb-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-primary-green-dark mb-6">Our Mission</h2>
-              <p className="text-base sm:text-lg text-dark-gray leading-relaxed">
+              <h2 className="text-3xl sm:text-4xl font-bold text-primary-green-dark mb-6 animate-fade-in-up">Our Mission</h2>
+              <p className="text-base sm:text-lg text-dark-gray leading-relaxed animate-fade-in-up" style={{animationDelay: '0.2s'}}>
                 To establish a transparent, data-driven, and farmer-centric digital market intelligence 
                 system for medicinal plants in Uttarakhand, enabling improved price realization, promoting 
                 cultivation over wild collection, and strengthening sustainable medicinal plant value chains.
@@ -85,7 +85,7 @@ export default function About() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
+              <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 animate-fade-in-up" style={{animationDelay: '0.4s'}}>
                 <div className="w-14 h-14 md:w-16 md:h-16 bg-light-green rounded-xl flex items-center justify-center mb-6">
                   <svg className="w-7 h-7 md:w-8 md:h-8 text-primary-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>

@@ -11,11 +11,11 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-md">
+    <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-md animate-fade-in-down">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group animate-fade-in-left">
             <div className="w-10 h-10 md:w-12 md:h-12 bg-primary-green rounded-full flex items-center justify-center group-hover:bg-secondary-green transition-colors shadow-md">
               <span className="text-white font-bold text-xl md:text-2xl">M</span>
             </div>
@@ -23,7 +23,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8 lg:gap-10">
+          <div className="hidden md:flex items-center gap-8 lg:gap-10 animate-fade-in">
             <Link href="/" className="text-dark-gray hover:text-primary-green transition-colors font-medium text-base lg:text-lg">
               Home
             </Link>
@@ -41,7 +41,7 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 rounded-lg hover:bg-light-green transition-colors"
+            className="md:hidden p-2 rounded-lg hover:bg-light-green transition-colors animate-fade-in-right"
             aria-label="Toggle menu"
           >
             <svg

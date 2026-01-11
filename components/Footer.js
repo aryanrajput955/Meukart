@@ -2,9 +2,10 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-green-dark text-white">
-      <div className="container py-12 ml-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+    <footer className="bg-primary-green-dark text-white animate-fade-in">
+      <div className="w-full px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
@@ -104,6 +105,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-primary-green mt-8 pt-6 text-center text-sage-green text-sm">
           <p>&copy; {new Date().getFullYear()} Meukart. All rights reserved.</p>
+        </div>
         </div>
       </div>
     </footer>

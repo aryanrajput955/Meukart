@@ -32,13 +32,13 @@ export default function Contact() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-light-green via-cream to-sand py-16 md:py-24 lg:py-32">
+      <section className="bg-gradient-to-br from-light-green via-cream to-sand py-16 md:py-24 lg:py-32 animate-fade-in">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-green-dark mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary-green-dark mb-6 animate-fade-in-up">
               Contact MEUKART
             </h1>
-            <p className="text-lg sm:text-xl text-dark-gray leading-relaxed">
+            <p className="text-lg sm:text-xl text-dark-gray leading-relaxed animate-fade-in-up" style={{animationDelay: '0.2s'}}>
               For platform support, cultivator registration, and partnership inquiries
             </p>
           </div>
@@ -46,11 +46,11 @@ export default function Contact() {
       </section>
 
       {/* Contact Content */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-16 md:py-24 bg-white animate-fade-in">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 max-w-6xl mx-auto">
             {/* Contact Form */}
-            <div>
+            <div className="animate-fade-in-left">
               <h2 className="text-2xl sm:text-3xl font-bold text-primary-green-dark mb-6 md:mb-8">
                 Send Us a Message
               </h2>
@@ -67,7 +67,7 @@ export default function Contact() {
               )}
 
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
+                <div className="animate-fade-in-up" style={{animationDelay: '0.4s'}}>
                   <label htmlFor="name" className="block text-sm md:text-base font-semibold text-dark-gray mb-3">
                     Your Name *
                   </label>
@@ -83,7 +83,7 @@ export default function Contact() {
                   />
                 </div>
 
-                <div>
+                <div className="animate-fade-in-up" style={{animationDelay: '0.5s'}}>
                   <label htmlFor="email" className="block text-sm md:text-base font-semibold text-dark-gray mb-3">
                     Email Address *
                   </label>
